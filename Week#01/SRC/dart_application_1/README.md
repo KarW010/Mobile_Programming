@@ -1,0 +1,1 @@
+Download the two applications required for the mobile programming course, such as Flutter and Android Studio. Continue to Jobsheet 1 - Explains the use of simple darts from the Flutter extension (creating hello world and calculating the area of a triangle). The challenge lies in the time-consuming installation process.
