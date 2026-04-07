@@ -1,9 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:hello_world/basic_widget/image_widget.dart';
 import 'package:hello_world/basic_widget/text_widget.dart';
+import 'package:hello_world/basic_widget/image_widget.dart';
+import 'package:hello_world/basic_widget/scaffold_widget.dart';
+import 'package:hello_world/basic_widget/scaffold_widget.dart';
+import 'package:hello_world/basic_widget/dialog_widget.dart';
+import 'package:hello_world/basic_widget/input_widget.dart';
+import 'package:hello_world/basic_widget/date_picker_widget.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(const DatePickerWidget());
 }
 
 class MyApp extends StatelessWidget {
@@ -30,7 +35,7 @@ class MyApp extends StatelessWidget {
         //
         // This works for code too, not just values: Most code changes can be
         // tested with just a hot reload.
-        colorScheme: .fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
       ),
       home: const MyHomePage(title: 'Kartiko Widyotomo'),
     );
@@ -104,7 +109,7 @@ class _MyHomePageState extends State<MyHomePage> {
           // TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
           // action in the IDE, or press "p" in the console), to see the
           // wireframe for each widget.
-          mainAxisAlignment: .center,
+          mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             const MyImageWidget(),
             Text(
