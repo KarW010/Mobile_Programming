@@ -1,0 +1,6 @@
+# weather_firebase_app
+
+# Proses Pengerjaan
+Pertama-tama dibuat tampilan UI dulu tanpa logic apapun, ada tiga halaman yaitu Login, Register, dan halaman cuaca. Setelah UI jadi, dilanjutkan dengan setup Firebase. Caranya dengan buat project baru di Firebase Console, lalu daftarkan Web App dan copy konfigurasinya ke file firebase_options.dart di project Flutter. Setelah itu aktifkan fitur Authentication dengan metode Email dan Password di Firebase Console.
+Jika Firebase sudah terhubung, lanjut bikin fitur login dan register menggunakan FirebaseAuth.instance. Pengguna bisa daftar akun baru lewat halaman Register dan masuk lewat halaman Login. Ada juga tombol logout yang mengarahkan balik ke halaman Login.
+Untuk bagian cuaca, dipakai Open-Meteo API karena gratis dan tidak perlu API key sama sekali. Data yang ditampilkan ada suhu, kelembapan, kecepatan angin, UV Index, visibilitas, dan kondisi cuaca saat ini, plus perkiraan cuaca per jam untuk 12 jam ke depan. Lokasi pengguna dideteksi otomatis pakai package Geolocator supaya data cuaca yang muncul sesuai lokasi pengguna saat itu.
